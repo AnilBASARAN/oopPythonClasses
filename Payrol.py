@@ -1,9 +1,9 @@
 class Programmer:
     
      # Add the class attributes
-    salary = 5000
+    salary = 100000
     monthly_bonus = 1000
-    
+
     def __init__(self, name, age, address, phone, programming_languages):
         self.name = name
         self.age = age
@@ -13,7 +13,7 @@ class Programmer:
  
  
 class Assistant:
-    salary = 4000
+    salary = 40000
     monthly_bonus = 1000
     # Add the class attributes
     
@@ -42,7 +42,9 @@ def calculate_payroll(employees):
         total += salary
  
     # Display the total
-    print("\nThe total payroll this month will be: $", total)
+    print(f"\nWill This Work? The total payroll this month will be: $" +str(round(total,4)))
+
+
  
 # Instances (employees)
 jack = Programmer("Jack", 45, "5th Avenue", "555-563-345", ["Python", "Java"])
